@@ -1,0 +1,30 @@
+package cucumber.poker;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+/**
+ * リスト17.9 Patクラス
+ * @author shuji.w6e
+ */
+public abstract class Pat {
+    public static final Pat NO_PAIR = new NoPair();
+
+    public static Pat make(Hands hands) {
+        // TODO 他の役の実装
+        return NO_PAIR;
+    }
+
+    public static class NoPair extends Pat {
+        // hashCode,equalsメソッドは省略
+        @Override
+        public boolean equals(Object obj) {
+            return obj instanceof NoPair;
+        }
+
+        @Override
+        public int hashCode() {
+            return 17;
+        }
+    }
+}

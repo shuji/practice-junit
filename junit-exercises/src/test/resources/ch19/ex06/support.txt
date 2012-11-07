@@ -1,0 +1,12 @@
+GlassFish|Oracle|true
+GlassFish|DB2|true
+GlassFish|PostgreSQL|true
+GlassFish|MySQL|true
+JBoss|Oracle|false
+JBoss|DB2|true
+JBoss|PostgreSQL|true
+JBoss|MySQL|false
+Tomcat|Oracle|false
+Tomcat|DB2|false
+Tomcat|PostgreSQL|false
+Tomcat|MySQL|true

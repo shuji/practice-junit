@@ -1,0 +1,20 @@
+package junit.tutorial;
+
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * {@link Calculator}のテストクラス
+ * リスト1.2 初期のCalculatorTest
+ * @author shuji.w6e
+ */
+public class CalculatorTest {
+
+    @Test
+    public void test() {
+        fail("まだ実装されていません");
+    }
+    
+}

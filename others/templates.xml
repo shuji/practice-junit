@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="java-statements" deleted="false" description="JUnit Assertion" enabled="true" name="at">assertThat(${actual:localVar(java.lang.Object)}, is(${expected:localVar(java.lang.Object)}));${junit:importStatic('org.junit.Assert.assertThat')}${hamcrest:importStatic('org.hamcrest.CoreMatchers.is')}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit instantiation test" enabled="true" name="instantiation">public static class インスタンス化テスト {
+    @${testType:newType(org.junit.Test)}
+    public void ${デフォルトコンストラクタ}() throws Exception {
+        // Exercise
+        ${t:newType(java.lang.Object)} ${instance:localVar(java.lang.Object)} = new ${t}();
+        // Verify
+        assertThat(instance, is(notNullValue()));${junit:importStatic('org.junit.Assert.assertThat')}${hamcrest:importStatic('org.hamcrest.CoreMatchers.is')}
+    }
+}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit setUp method" enabled="true" name="setUp">@${testType:newType(org.junit.Before)}
+public void setUp() throws Exception {
+    ${cursor} 
+}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit setUpClass method" enabled="true" name="setUpClass">@${testType:newType(org.junit.BeforeClass)}
+public static void setUpClass() throws Exception {
+    ${cursor}
+}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit tearDown method" enabled="true" name="tearDown">@${testType:newType(org.junit.After)}
+public void tearDown() throws Exception {
+    ${cursor}
+}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit tearDownClass method" enabled="true" name="tearDownClass">@${testType:newType(org.junit.AfterClass)}
+public static void tearDownClass() throws Exception {
+    ${cursor}
+}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit test method" enabled="true" id="org.eclipse.jdt.ui.templates.test" name="test">@${testType:newType(org.junit.Test)}
+public void ${testCase}() throws Exception {
+    // SetUp
+    // Exercise
+    // Verify
+}</template><template autoinsert="false" context="java-members" deleted="false" description="JUnit context test class" enabled="true" name="when">public static class ${TestContext} {
+    ${cursor}
+}</template></templates>

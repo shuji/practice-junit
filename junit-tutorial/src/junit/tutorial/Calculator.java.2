@@ -1,0 +1,18 @@
+package junit.tutorial;
+
+/**
+ * JUnit実践入門の第1章で作成する計算機プログラム.
+ * リスト1.9 除算メソッドのゼロ除算対応(
+ * @author shuji.w6e
+ */
+public class Calculator {
+
+    public int multiply(int x, int y) {
+        return x * y;
+    }
+
+    public float divide(int x, int y) {
+        if (y == 0) throw new IllegalArgumentException("divide by zero.");
+        return (float) x / (float) y;
+    }
+}
