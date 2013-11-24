@@ -41,10 +41,10 @@ public class MainActivityTest
     }
 
     public void testPreConditions() throws Exception {
-        assertEquals(userIdEditText.getText().toString(), "");
-        assertEquals(passwdEditText.getText().toString(), "");
+        assertEquals("", userIdEditText.getText().toString());
+        assertEquals("", passwdEditText.getText().toString());
         assertFalse(pushButton.isEnabled());
-        assertEquals(statusTextView.getText().toString(), "");
+        assertEquals("", statusTextView.getText().toString());
     }
 
     public void testHappyPath() throws Exception {
